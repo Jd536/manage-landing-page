@@ -1,0 +1,149 @@
+@import "../../scss/mixing";
+@import "../../scss/variables";
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25rem;
+  font-size: 1.6rem;
+  margin-top: 6rem;
+  h2 {
+    font-size: 3.5rem;
+  }
+  &-heading {
+    font-size: 5rem;
+  }
+
+  &-sections:first-of-type,
+  &-sections:nth-of-type(2) {
+    width: 80%;
+    height: 10rem;
+    margin: 0 auto;
+  }
+
+  &-sections:not(:last-of-type) {
+    margin-bottom: 10rem;
+  }
+}
+
+//Top section styling
+
+.top-section {
+  display: flex;
+
+  &-left {
+    flex: 1;
+    div {
+      padding-right: 15rem;
+      p {
+        width: 75%;
+      }
+    }
+  }
+  &-right {
+    background-color: red;
+    height: 100%;
+    flex: 1;
+  }
+}
+
+//End of top section styling
+
+// Second section style
+.middle-section {
+  display: flex;
+
+  &-left {
+    flex: 1;
+    div {
+      padding-right: 15rem;
+      p {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.middle-section-left,
+.middle-section-right {
+  flex: 1;
+}
+.middle-section-left {
+  div {
+    padding-right: 10rem;
+  }
+}
+.middle-section-right-contents {
+  display: flex;
+  gap: 2rem;
+  padding-right: 4rem;
+}
+
+.position-label {
+  span {
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    color: $white;
+    background-color: $Bright-Red;
+    border-radius: 2rem;
+  }
+}
+//Second Middle Section style end
+
+//Slider Style
+.slider-section {
+  margin-bottom: -10rem !important;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .btn {
+    margin-left: calc(50% - 10rem);
+    margin-top: 5rem;
+  }
+}
+
+//End of slider style
+.call-to-action-section {
+  width: 100%;
+  background-color: $Bright-Red;
+  height: 10rem;
+  display: flex;
+  align-self: flex-end;
+}
+
+.call-to-action {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-to-action-text {
+  width: 25%;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $white;
+}
+
+.btn {
+  &.secondary {
+    @include btn-main;
+    background: $white;
+    color: $Bright-Red;
+  }
+}

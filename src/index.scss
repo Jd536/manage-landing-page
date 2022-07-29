@@ -1,0 +1,38 @@
+/*CSS RESET*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+@import "./scss//variables";
+@import "./scss/mixing";
+
+body {
+  background-color: $white;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+//Typograpy
+h1,
+h2,
+h3 {
+  color: $Dark-Blue;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.text-main {
+  color: $Dark-Grayish-Blue;
+  margin: 2rem 0;
+}

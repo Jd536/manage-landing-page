@@ -1,0 +1,34 @@
+@import "../../scss/mixing";
+@import "../../scss/variables";
+
+//Cards Styles
+.card {
+  height: 35rem;
+
+  padding: 2rem;
+  //   max-width: 30%;
+  display: inline-block;
+  &-outer-container {
+    flex-direction: column;
+    position: relative;
+    margin-top: 3rem;
+    padding: 5rem;
+    background-color: $Vary-Light-Gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    img {
+      width: 8rem;
+      top: -4rem;
+      right: calc(50% - 4rem);
+      left: auto;
+      position: absolute;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+//End of Cards Style

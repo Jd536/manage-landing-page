@@ -1,0 +1,26 @@
+@import "../scss/mixing";
+@import "../scss/variables";
+
+.mobile-menu-toggle-button {
+  display: none;
+}
+
+.btn {
+  &.primary {
+    @include btn-main;
+    background-color: $Bright-Red;
+    color: $white;
+    &:hover {
+      background-color: lighten($Bright-Red, 10%);
+    }
+  }
+}
+
+.navBar {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  font-size: 1.6rem;
+}

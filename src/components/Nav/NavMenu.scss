@@ -1,0 +1,24 @@
+@import "../../scss/variables";
+
+.nav {
+  flex: 1;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    font-weight: 400;
+  }
+
+  &-links,
+  :link,
+  &-links:visited {
+    color: $Very-Dark-Blue;
+  }
+  &-links:hover {
+    // font-size: 3rem;
+    color: lighten($Very-Dark-Blue, 50%);
+  }
+}

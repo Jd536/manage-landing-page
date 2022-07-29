@@ -1,0 +1,13 @@
+@import "./variables";
+
+@mixin btn-main {
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin headings {
+  color: $Very-Dark-Blue;
+}

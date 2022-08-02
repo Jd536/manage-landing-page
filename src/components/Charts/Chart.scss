@@ -1,0 +1,94 @@
+@import "../../scss/mixing";
+@import "../../scss/variables";
+
+.charts {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-columns: repeat(3, minmax(30%, 1fr));
+  grid-template-areas: "left left right right" ". center center .";
+  gap: 3%;
+}
+
+.chart {
+  background-color: $white;
+  height: 25rem;
+  box-shadow: rgba(223, 221, 221, 0.2) 0px 2px 8px 0px;
+  //   background-color: pink;
+
+  &-1 {
+    grid-area: left;
+    padding: 1rem;
+    &-inner-container {
+      height: 100%;
+      background: url("../../images/paper.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+
+      //Add colored overlay to the background image
+      &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $Very-Pale-Red;
+        opacity: 70%;
+      }
+    }
+  }
+
+  &-2 {
+    grid-area: right;
+  }
+
+  &-3 {
+    grid-area: center;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b c";
+    grid-gap: 1rem;
+    align-self: center;
+
+    div:first-of-type {
+      grid-area: a;
+      color: $Very-Dark-Blue;
+      font-size: 3rem;
+      padding: 1rem;
+      font-weight: 700;
+      display: flex;
+      // justify-content: flex-end;
+      span {
+        align-self: flex-end;
+      }
+    }
+
+    div:nth-of-type(2) {
+      color: $white;
+      background-color: $Bright-Red;
+      display: flex;
+      padding: 1rem;
+
+      span {
+        align-self: flex-end;
+      }
+    }
+
+    div:nth-of-type(3) {
+      color: $Very-Dark-Blue;
+      display: flex;
+      padding: 1rem;
+      font-weight: 700;
+      span {
+        align-self: flex-end;
+      }
+    }
+
+    div:not(:nth-of-type(2)) {
+      background-color: $Very-Pale-Red;
+    }
+  }
+}

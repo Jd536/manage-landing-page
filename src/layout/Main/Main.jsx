@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../../components/Button/Button";
+import Chart from "../../components/Charts/Chart";
+import Chartillustration from "../../images/illustration-intro.svg";
 import SliderComponent from "../../components/Slider/SliderComponent";
 
 import "./Main.scss";
@@ -20,7 +22,10 @@ const Main = () => {
             <Button type="primary">Get Started</Button>
           </div>
         </div>
-        <div className="top-section-right"></div>
+        <div className="top-section-right">
+          {/* <Chart /> */}
+          <img src={Chartillustration} alt="" className="chart-illustration" />
+        </div>
       </section>
       <section className="main-sections middle-section">
         <div className="middle-section-left">
@@ -37,9 +42,9 @@ const Main = () => {
           <div className="middle-section-right-contents">
             <div className="position-label">
               <span>01</span>
+              <h3>Track company-wide progress</h3>
             </div>
             <div>
-              <h3>Track company-wide progress</h3>
               <p className="text-main">
                 See how your day-to-day tasks fit into the wider vision. Go from
                 tracking progress at the milestone level all the way done to the
@@ -51,9 +56,9 @@ const Main = () => {
           <div className="middle-section-right-contents">
             <div className="position-label">
               <span>02</span>
+              <h3>Advanced built-in reports</h3>
             </div>
             <div>
-              <h3>Advanced built-in reports</h3>
               <p className="text-main">
                 Set internal delivery estiamtes and track progress toward
                 company goals. Our customisable dashboard helps you build out
@@ -64,9 +69,9 @@ const Main = () => {
           <div className="middle-section-right-contents">
             <div className="position-label">
               <span>03</span>
+              <h3>Everything you need in one place</h3>
             </div>
             <div>
-              <h3>Everything you need in one place</h3>
               <p className="text-main">
                 Stop jumping one service to another communicate, store files,
                 track tasks and share documents. Manage offers an all-in-one

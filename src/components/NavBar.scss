@@ -1,10 +1,6 @@
 @import "../scss/mixing";
 @import "../scss/variables";
 
-.mobile-menu-toggle-button {
-  display: none;
-}
-
 .btn {
   &.primary {
     @include btn-main;
@@ -18,9 +14,43 @@
 
 .navBar {
   width: 80%;
+  max-width: 144rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 3rem 2.5rem 3rem 0;
   font-size: 1.6rem;
+
+  .btn {
+    &.primary {
+      @include btn-main;
+      background-color: $Bright-Red;
+      color: $white;
+      &:hover {
+        background-color: lighten($Bright-Red, 10%);
+      }
+
+      @include responsive(tab-land) {
+        display: none;
+      }
+    }
+  }
+
+  .nav {
+    @include responsive(tab-land) {
+      display: none;
+    }
+  }
+}
+
+.header-toggle-button {
+  // display: none;
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  @include responsive(tab-port) {
+    display: block;
+    margin-right: 0;
+  }
 }

@@ -5,7 +5,7 @@ import "./NavMenu.scss";
 
 const NavMenu = (props) => {
   return (
-    <nav className="nav">
+    <nav className={"nav-" + props.type}>
       <ul className="nav-container">
         {props.items.map((item, index) => (
           <li key={index}>

@@ -3,7 +3,7 @@
 
 //Cards Styles
 .card {
-  height: 35rem;
+  height: 30rem;
 
   padding: 2rem;
   //   max-width: 30%;
@@ -12,12 +12,16 @@
     flex-direction: column;
     position: relative;
     margin-top: 3rem;
-    padding: 5rem;
-    background-color: $Vary-Light-Gray;
+    padding: 3rem;
+    background-color: $Very-Pale-Red;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    height: 100%;
+    h3 {
+      margin-top: 2rem;
+    }
 
     img {
       width: 8rem;
@@ -32,3 +36,6 @@
   }
 }
 //End of Cards Style
+.slick-dots li button:before {
+  color: $Bright-Red !important;
+}

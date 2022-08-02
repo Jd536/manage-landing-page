@@ -5,4 +5,136 @@
   background-color: $Very-Dark-Blue;
   height: 10rem;
   color: $white;
+  height: 20rem;
+  height: auto;
+
+  &-inner-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+    display: flex;
+
+    @include responsive(tab-port) {
+      flex-direction: column-reverse;
+      gap: 3rem;
+      position: relative;
+    }
+  }
+
+  &-logo g[fill-rule="evenodd"] path {
+    fill: $Very-Light-Gray;
+  }
+
+  .nav {
+    font-size: 1.6rem;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      height: 13rem;
+      li {
+        width: 12rem;
+      }
+      a {
+        color: $Very-Light-Gray;
+        text-align: left;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $Bright-Red;
+        }
+      }
+    }
+  }
+
+  &-logo-and-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include responsive(tab-port) {
+      flex-direction: column-reverse;
+      gap: 3rem;
+      align-items: center;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &-socials-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    svg {
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover path {
+        fill: $Bright-Red;
+      }
+    }
+  }
+
+  &-form-and-copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+
+    p {
+      text-align: right;
+
+      @include responsive(tab-port) {
+        position: absolute;
+        bottom: 3rem;
+        text-align: center;
+        width: 100%;
+        // padding: 3rem;
+      }
+    }
+  }
+
+  &-form {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    input {
+      height: 100%;
+      padding: 1rem;
+      width: 30rem;
+      border: 1px solid $Bright-Red;
+      border-radius: 1.5rem;
+      margin-right: 1rem;
+      outline: none;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      height: 3.5rem;
+      width: 6rem;
+      border-radius: 2rem;
+      border: none;
+      cursor: pointer;
+      background-color: $Bright-Red;
+      color: $Very-Light-Gray;
+
+      &:hover {
+        background-color: lighten($Bright-Red, 10%);
+      }
+    }
+  }
+
+  .hide {
+    visibility: hidden;
+    text-align: center;
+  }
+
+  .invalid {
+    color: $Bright-Red;
+    text-align: center;
+  }
 }

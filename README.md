@@ -18,7 +18,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](https://i.postimg.cc/W40fK6Xv/mange-full-desktop.png)
-![Desktop - performance screenshot](https://i.postimg.cc/wvnKYTDK/desktop-performance.png)
+![Desktop - performance screenshot](https://i.postimg.cc/Y2xNPy7R/desktop-performance.png)
 ![Mobile-1](https://i.postimg.cc/DyzHZGyr/manage-mobile-screenshot.png)
 ![Mobile-2](https://i.postimg.cc/4x70vTcn/manage-mobile-screenshot-2.png)
 

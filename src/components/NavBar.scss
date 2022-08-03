@@ -35,14 +35,14 @@
         background-color: lighten($Bright-Red, 10%);
       }
 
-      @include responsive(tab-land) {
+      @include responsive(tab-port) {
         display: none;
       }
     }
   }
 
   .nav {
-    @include responsive(tab-land) {
+    @include responsive(tab-port) {
       display: none;
     }
   }

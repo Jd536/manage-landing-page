@@ -4,7 +4,7 @@
 .nav {
   flex: 1;
   &-desktop {
-    @include responsive(tab-land) {
+    @include responsive(tab-port) {
       display: none;
     }
   }

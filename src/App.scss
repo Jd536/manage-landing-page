@@ -1,0 +1,23 @@
+@import "./scss/mixing";
+@import "./scss/variables";
+
+.App {
+  background-image: url("./images/bg-tablet-pattern.svg"),
+    url("./images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top -15rem right -5rem, top 75rem left -50rem;
+
+  @include responsive(tab-land) {
+    background-position: top -30rem right -40rem, top 75rem left -50rem;
+    background-size: 90rem auto;
+  }
+  @include responsive(tab-port) {
+    background-position: top -10rem right -20rem, top 50rem right -50rem;
+    background-size: 80rem auto;
+  }
+
+  @include responsive(phone) {
+    background-position: top -10rem right -5rem, top 55rem right -20rem;
+    background-size: 40rem auto;
+  }
+}

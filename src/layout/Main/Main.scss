@@ -24,7 +24,7 @@
     // height: 10rem;
     margin: 0 auto;
 
-    @include responsive(tab-port) {
+    @include responsive(tab-land) {
       width: 90%;
     }
   }
@@ -66,7 +66,7 @@
       justify-content: flex-start;
       padding-right: 15rem;
 
-      @include responsive(tab-port) {
+      @include responsive(tab-land) {
         padding-right: 0;
       }
       p {
@@ -74,6 +74,9 @@
         padding: 3rem 0;
         margin-right: 15rem;
         font-size: 1.6rem;
+        @include responsive(tab-land) {
+          margin-right: 7rem;
+        }
         @include responsive(tab-port) {
           text-align: center;
           width: 100%;
@@ -109,11 +112,15 @@
   &-left {
     div {
       padding-right: 15rem;
-      @include responsive(tab-port) {
+      @include responsive(tab-land) {
         padding-right: 0;
       }
       p {
         width: 75%;
+        @include responsive(tab-land) {
+          width: 90%;
+        }
+
         @include responsive(tab-port) {
           text-align: center;
           width: 100%;

@@ -19,17 +19,18 @@
 
   &-mobile {
     &-show {
-      position: relative;
       @include responsive(tab-port) {
+        position: relative;
         flex: 1;
         display: block;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        bottom: 0;
+        width: 100%;
       }
       .nav-container {
-        position: absolute;
-        top: 3em;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
+        margin: auto;
         height: 25rem;
         z-index: 999;
         background-color: $white;

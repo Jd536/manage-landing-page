@@ -1,11 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 
 // import review avatarts
-import AvatarAli from "../../images/avatar-ali.png";
-import AvatarAnisha from "../../images/avatar-anisha.png";
-import AvaTarRichard from "../../images/avatar-richard.png";
-import AvatarShanai from "../../images/avatar-shanai.png";
 
 //import CSS
 import "./Slider.scss";
@@ -43,7 +39,10 @@ const SliderComponent = () => {
       <Slider {...sliderSettings}>
         <div className="card">
           <div className="card-outer-container">
-            <img src={AvatarAnisha} alt="client reviews avatar" />
+            <img
+              src="https://i.postimg.cc/pV5k1BT1/avatar-anisha.png"
+              alt="client reviews avatar"
+            />
             <h3>Anisha Li</h3>
             <p className="text-main">
               <q>
@@ -56,7 +55,10 @@ const SliderComponent = () => {
         </div>
         <div className="card">
           <div className="card-outer-container">
-            <img src={AvatarAli} alt="client reviews avatar" />
+            <img
+              src="https://i.postimg.cc/9MKbQDxp/avatar-ali.png"
+              alt="client reviews avatar"
+            />
             <h3>ALi Bravo</h3>
             <p className="text-main">
               <q>
@@ -69,7 +71,10 @@ const SliderComponent = () => {
         </div>
         <div className="card">
           <div className="card-outer-container">
-            <img src={AvaTarRichard} alt="client reviews avatar" />
+            <img
+              src="https://i.postimg.cc/MHBDMzN8/avatar-richard.png"
+              alt="client reviews avatar"
+            />
             <h3>Rirachard Watts</h3>
             <p className="text-main">
               <q>
@@ -82,7 +87,10 @@ const SliderComponent = () => {
         </div>
         <div className="card">
           <div className="card-outer-container">
-            <img src={AvatarShanai} alt="client reviews avatar" />
+            <img
+              src="https://i.postimg.cc/k4BwCQyG/avatar-shanai.png"
+              alt="client reviews avatar"
+            />
             <h3>Shanai Gough</h3>
             <p className="text-main">
               <q>

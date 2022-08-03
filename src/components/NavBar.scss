@@ -20,7 +20,12 @@
   justify-content: space-between;
   padding: 3rem 2.5rem 3rem 0;
   font-size: 1.6rem;
+  position: relative;
 
+  @include responsive(tab-port) {
+    width: 90%;
+    padding-right: 0;
+  }
   .btn {
     &.primary {
       @include btn-main;

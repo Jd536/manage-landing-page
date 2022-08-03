@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button/Button";
-import Chart from "../../components/Charts/Chart";
+
 import Chartillustration from "../../images/illustration-intro.svg";
 import SliderComponent from "../../components/Slider/SliderComponent";
 

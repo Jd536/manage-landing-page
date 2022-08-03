@@ -58,6 +58,7 @@ const Footer = () => {
             <label htmlFor="email">
               <input
                 type="email"
+                className={invalid ? " invalid-input" : ""}
                 placeholder="johndoe@manage.com"
                 onChange={() => {
                   if (invalid) {
